@@ -1,0 +1,26 @@
+version: '3.4'
+services:
+  classificationbox:
+    image: machinebox/classificationbox
+    environment:
+      - MB_KEY=${MB_KEY}
+      - MB_PORT=8080
+      - MB_BASICAUTH_USER=
+      #- MB_BASICAUTH_PASS=schmoe
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/healthz"]
+      interval: 3s
+      timeout: 10s
+      retries: 2
+      start_period: 5s
+  facebox:
+    image: machinebox/facebox
+    environment:
+      - MB_KEY=${MB_KEY}
+      - MB_PORT=8081
+      - MB_BASICAUTH_USER=joe
+      - MB_BASICAUTH_PASS=schmoe
+    ports:
+      - "8081:8081"
