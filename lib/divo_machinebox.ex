@@ -1,7 +1,9 @@
 defmodule DivoMachinebox do
   @moduledoc """
-  Documentation for DivoMachinebox.
+  Defines a generic Machinebox stack as a map compatible
+  with divo for building a docker-compose file. See the box specific modules.
   """
+
   @common_vars [
     :key,
     :port,
@@ -57,6 +59,10 @@ defmodule DivoMachinebox do
 end
 
 defmodule DivoMachinebox.Classificationbox do
+  @moduledoc """
+  Defines a Classificationbox stack as a map compatible
+  with divo for building a docker-compose file.
+  """
   @classificationbox_vars [:state_url, :state_poll_seconds]
   use DivoMachinebox, box_name: "classificationbox", box_vars: @classificationbox_vars
 end
@@ -75,5 +81,4 @@ defmodule DivoMachinebox.Facebox do
     :redis_sentinel_master
   ]
   use DivoMachinebox, box_name: "facebox", box_vars: @facebox_vars
-
 end

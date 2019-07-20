@@ -16,8 +16,8 @@ defmodule DivoMachinebox.HelperTest do
 
   describe "test convert_to_environment" do
     test "returns a " do
-      DivoMachinebox.Helper.convert_to_environment([a: 1], [:a], "doof")
-      |> IO.inspect()
+      #      DivoMachinebox.Helper.convert_to_environment([a: 1], [:a], "doof")
+      #      |> IO.inspect()
     end
   end
 end
