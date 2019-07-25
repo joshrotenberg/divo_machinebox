@@ -3,7 +3,7 @@
 
 A library implementing the [Divo](https://hex.pm/packages/divo) Stack behaviour, providing a pre-configured Machinebox.
 
-Requires inclusion of the Divo library in your mix project.
+Requires inclusion of the [Divo](https://hex.pm/packages/divo) library in your mix project.
 
 ## Installation
 
