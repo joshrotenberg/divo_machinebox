@@ -1,21 +1,19 @@
-# DivoMachinebox
+[![Hex.pm Version](http://img.shields.io/hexpm/v/divo_machinebox.svg?style=flat)](https://hex.pm/packages/divo_machinebox)
+# Divo Machinebox
 
-**TODO: Add description**
+A library implementing the [Divo](https://hex.pm/packages/divo) Stack behaviour, providing a pre-configured Machinebox.
+
+Requires inclusion of the [Divo](https://hex.pm/packages/divo) library in your mix project.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `divo_machinebox` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `divo_machinebox` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
+    {:divo, "~> 1.1"},
     {:divo_machinebox, "~> 0.1.0"}
   ]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/divo_machinebox](https://hexdocs.pm/divo_machinebox).
-
